@@ -471,38 +471,63 @@ h3 {
 .site-footer {
   background-color: var(--bg-dark);
   color: #9ca3af;
-  padding: 48px 0;
+  padding: 48px 16px;
 }
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 32px;
   border-bottom: 1px solid #1f2937;
+  flex-wrap: wrap;
 }
+
 .footer-logo {
   font-size: 24px;
   font-weight: 700;
   color: var(--text-white);
+  text-decoration: none;
 }
+
 .social-links {
   display: flex;
   gap: 24px;
+  margin-left: 10px;
 }
+
 .social-links a {
-  transition: opacity 0.2s;
+  color: #9ca3af;
+  font-size: 20px;
+  transition: opacity 0.2s, color 0.2s;
 }
+
 .social-links a:hover {
   opacity: 0.8;
+  color: var(--text-white);
 }
+
 .footer-bottom {
   padding-top: 32px;
   text-align: center;
   font-size: 16px;
 }
+
 @media (max-width: 768px) {
-    .footer-top {
-        flex-direction: column;
-        gap: 24px;
-    }
+  .footer-top {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-left: 0;
+  }
 }
