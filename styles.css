@@ -1,12 +1,12 @@
 :root {
-  --primary-gradient: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-  --primary-purple: #9333ea;
+  --primary-gradient: linear-gradient(90deg, #ea9666 0%, #a24b4b 100%);
+  --primary-purple: #ea9b33;
   --text-dark: #111827;
   --text-light: #4b5563;
   --text-white: #ffffff;
   --bg-light: #f9fafb;
   --bg-white: #ffffff;
-  --bg-dark: #111827;
+  --bg-dark: #271111;
   --border-light: #e5e7eb;
 }
 
@@ -366,7 +366,7 @@ h3 {
   margin-bottom: 24px;
 }
 .tag {
-  background-color: #f3e8ff;
+  background-color: #ffe8e8;
   color: var(--primary-purple);
   padding: 4px 12px;
   border-radius: 9999px;
