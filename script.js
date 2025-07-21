@@ -1,7 +1,10 @@
-const hamburger = document.getElementById('hamburger-btn');
-const nav = document.getElementById('main-nav');
-hamburger.addEventListener('click', function () {
-  nav.classList.toggle('nav-open');
-  const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-  hamburger.setAttribute('aria-expanded', !expanded);
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const nav = document.querySelector('.main-nav');
+
+hamburgerBtn.addEventListener('click', () => {
+  nav.classList.toggle('nav-open'); 
+  hamburgerBtn.classList.toggle('active'); 
+
+  const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+  hamburgerBtn.setAttribute('aria-expanded', !expanded);
 });
