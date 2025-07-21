@@ -10,3 +10,9 @@
   --border-light: #e5e7eb;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
