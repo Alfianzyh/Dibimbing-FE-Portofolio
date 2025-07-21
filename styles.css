@@ -1,0 +1,12 @@
+:root {
+  --primary-gradient: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  --primary-purple: #9333ea;
+  --text-dark: #111827;
+  --text-light: #4b5563;
+  --text-white: #ffffff;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --bg-dark: #111827;
+  --border-light: #e5e7eb;
+}
+
