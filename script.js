@@ -1,14 +1,7 @@
-// Animasi muncul saat scroll
-const fadeElements = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-}, {
-  threshold: 0.1
+const hamburger = document.getElementById('hamburger-btn');
+const nav = document.getElementById('main-nav');
+hamburger.addEventListener('click', function () {
+  nav.classList.toggle('nav-open');
+  const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+  hamburger.setAttribute('aria-expanded', !expanded);
 });
-
-fadeElements.forEach(el => observer.observe(el));
