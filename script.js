@@ -8,3 +8,11 @@ hamburgerBtn.addEventListener('click', () => {
   const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
   hamburgerBtn.setAttribute('aria-expanded', !expanded);
 });
+
+document.querySelectorAll('.main-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('nav-open');
+    hamburgerBtn.classList.remove('active');
+    hamburgerBtn.setAttribute('aria-expanded', false);
+  });
+});
